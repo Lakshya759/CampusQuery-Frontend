@@ -1,0 +1,19 @@
+.home-container {
+  min-height: 100vh;
+   background: linear-gradient(120deg, #d9e4ff, #f5d0ff, #ffd6e8);
+  background-attachment: fixed; 
+}
+
+.content {
+  padding: 20px 40px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  color: #666;
+}
+
