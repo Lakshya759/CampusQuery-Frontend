@@ -27,7 +27,7 @@ const Login = () => {
         setLoading("true")
 
         try{
-            const res=await axios.post("http://localhost:8000/api/v1/users/login",formData,{ withCredentials: true })
+            const res=await axios.post("https://campusquery-backend-kvnf.onrender.com/api/v1/users/login",formData,{ withCredentials: true })
             if(res.data.success){
                 console.log("login successful")
                 setMessage("login successful 👍")

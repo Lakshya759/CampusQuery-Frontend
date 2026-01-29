@@ -15,7 +15,7 @@ export default function QuestionPage() {
   const fetchQuestions = async (tag) => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/posts/view${tag ? `?tag=${tag}` : ""}`,
+        `https://campusquery-backend-kvnf.onrender.com/api/v1/posts/view${tag ? `?tag=${tag}` : ""}`,
         { withCredentials: true }
       );
 

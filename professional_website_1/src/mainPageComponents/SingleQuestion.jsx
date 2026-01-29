@@ -13,7 +13,7 @@ const SingleQuestion = () => {
 
   const fetchAns = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/api/v1/answer/${id}`, {
+      const res = await axios.get(`https://campusquery-backend-kvnf.onrender.com/api/v1/answer/${id}`, {
         withCredentials: true,
       });
       console.log("lakshya");
@@ -40,7 +40,7 @@ const SingleQuestion = () => {
     const fetchPosts = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/posts/view/${id}`,
+          `https://campusquery-backend-kvnf.onrender.com/api/v1/posts/view/${id}`,
           {
             withCredentials: true, // if your backend uses cookies
           }
@@ -68,7 +68,7 @@ const SingleQuestion = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/answer/create/${id}`,
+        `https://campusquery-backend-kvnf.onrender.com/api/v1/answer/create/${id}`,
         {
           body: comment,
         },
@@ -103,7 +103,7 @@ const SingleQuestion = () => {
   const upvote=async (answerId)=>{
     try {
       const res = await axios.patch(
-        `http://localhost:8000/api/v1/answer/upvote/${answerId}`,{},{ withCredentials: true }
+        `https://campusquery-backend-kvnf.onrender.com/api/v1/answer/upvote/${answerId}`,{},{ withCredentials: true }
       );
       if (res.data.success) {
         console.log("upvote successful");

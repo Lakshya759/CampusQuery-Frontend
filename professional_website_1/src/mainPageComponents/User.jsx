@@ -8,7 +8,7 @@ const User = () => {
   const [users, setUsers] = useState({});
   const fetchUser = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/api/v1/users/user`, {
+      const res = await axios.get(`https://campusquery-backend-kvnf.onrender.com/api/v1/users/user`, {
         withCredentials: true,
       });
       console.log("lakshya");
@@ -38,7 +38,7 @@ const User = () => {
 
   const logout = async () => {
     try {
-      const res = await axios.post(`http://localhost:8000/api/v1/users/logout`,{}, {
+      const res = await axios.post(`https://campusquery-backend-kvnf.onrender.com/api/v1/users/logout`,{}, {
         withCredentials: true,
       });
       console.log("lakshya");

@@ -37,7 +37,7 @@ const Signup = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/v1/users/signup",
+        "https://campusquery-backend-kvnf.onrender.com/api/v1/users/signup",
         formData
       );
       if (res.data.success) {
