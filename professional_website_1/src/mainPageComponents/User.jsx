@@ -11,13 +11,13 @@ const User = () => {
       const res = await axios.get(`https://campusquery-backend-kvnf.onrender.com/api/v1/users/user`, {
         withCredentials: true,
       });
-      console.log("lakshya");
+      
 
       if (!res.data) {
         console.log("User Not Found");
       } else {
         setUsers(res.data.data);
-        console.log(users.skills);
+        
       }
     } catch (error) {
       console.log(error);
@@ -41,7 +41,7 @@ const User = () => {
       const res = await axios.post(`https://campusquery-backend-kvnf.onrender.com/api/v1/users/logout`,{}, {
         withCredentials: true,
       });
-      console.log("lakshya");
+      
 
       if (!res.data.success) {
         console.log("User Not Found");

@@ -9,14 +9,14 @@ const SingleQuestion = () => {
   const [question, setQuestion] = useState({});
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);
-  console.log(id);
+  
 
   const fetchAns = async () => {
     try {
       const res = await axios.get(`https://campusquery-backend-kvnf.onrender.com/api/v1/answer/${id}`, {
         withCredentials: true,
       });
-      console.log("lakshya");
+      
 
       if (!res.data) {
         console.log("Answers Not Found");
@@ -34,7 +34,7 @@ const SingleQuestion = () => {
 
   const handleChange = (e) => {
     setComment(e.target.value);
-    console.log(comment);
+    
   };
   useEffect(() => {
     const fetchPosts = async () => {
@@ -45,7 +45,7 @@ const SingleQuestion = () => {
             withCredentials: true, // if your backend uses cookies
           }
         );
-        console.log("lakshya");
+        
 
         if (!res.data) {
           console.log("Post Not Found");

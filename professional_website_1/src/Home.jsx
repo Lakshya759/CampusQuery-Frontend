@@ -40,7 +40,7 @@ const Home = () => {
         const res = await axios.get("https://campusquery-backend-kvnf.onrender.com/api/v1/posts/view", {
           withCredentials: true // if your backend uses cookies
         });
-        console.log("lakshya")
+        
 
         if (!res.data) {
           setMessage("No posts found");

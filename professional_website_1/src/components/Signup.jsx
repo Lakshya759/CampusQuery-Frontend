@@ -24,7 +24,7 @@ const Signup = () => {
 
   //used to handle the change in the input -----------------------------------------------------------------------------------------
   const handleChange = (e) => {
-    console.log(e.target.name);
+    
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   //-------------------------------------------------------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ const Signup = () => {
       );
       if (res.data.success) {
         console.log(res.data.message);
-        console.log(formData);
+        
         
         setFormData({
         name: "",

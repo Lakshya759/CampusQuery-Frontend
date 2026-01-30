@@ -17,7 +17,7 @@ const AskQuestion = () => {
 
         const handleChange=(e)=>{
             setFormData({...formData ,[e.target.name]:e.target.value} )
-            console.log(formData);
+            
             
         }
 
@@ -46,7 +46,7 @@ const AskQuestion = () => {
         try{
             const res=await axios.post("https://campusquery-backend-kvnf.onrender.com/api/v1/posts/create",formData,{ withCredentials: true })
             if(res.data.success){
-                console.log("Question Submitted successfully")
+                
                 setMessage("Question Submitted successfully 👍")
                 setFormData({
                     title:"",
