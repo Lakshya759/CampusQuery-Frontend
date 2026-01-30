@@ -152,29 +152,10 @@ const Hero = () => {
             <div class="team-icon">👨‍💻</div>
             <h3>Lakshya Srivastava</h3>
             <p><strong>Email:</strong> 2400520100047@ietlucknow.ac.in</p>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+            <button className="button1"><a href="https://www.linkedin.com/in/lakshya-srivastava-a9009432a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"></a>LinkedIn</button> 
         </div>
 
-        <div class="team-card">
-            <div class="team-icon">👨‍💻</div>
-            <h3>Ayush Sharma</h3>
-            <p><strong>Email:</strong> 2400520100026@ietlucknow.ac.in</p>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-        </div>
-
-        <div class="team-card">
-            <div class="team-icon">👨‍💻</div>
-            <h3>Himanshu</h3>
-            <p><strong>Email:</strong> 2400520100040@ietlucknow.ac.in</p>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-        </div>
-
-        <div class="team-card">
-            <div class="team-icon">👨‍💻</div>
-            <h3>Ishant Kumar</h3>
-            <p><strong>Email:</strong>2400520100041@ietlucknow.ac.in</p>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-        </div>
+       
 
     </div>
 
