@@ -43,6 +43,7 @@ const Login = () => {
                 console.log(error)
             }
         }
+        setLoading(false)
     }
   return (
     <>
@@ -74,8 +75,12 @@ const Login = () => {
                 </div>
 
 
-                <button className="btn">
-                    Sign in <i className="fas fa-arrow-right"></i>
+                <button className="btn" disabled={loading}>
+                    {loading ? (
+                        <span className="animate-pulse">Loading...</span>
+                    ) : (
+                        "Sign In"
+                    )}<i className="fas fa-arrow-right"></i>
                 </button>
                 <h1 className="text-center text-red-600">{error}</h1>
                 <h1 className="text-center text-green-500">{message}</h1>
